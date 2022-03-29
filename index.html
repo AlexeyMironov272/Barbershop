@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>BarderShop</title>
 
@@ -17,29 +20,35 @@
 
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a class="header-logo" href=""><img src="./img/logo.svg" alt="логотип"></a>
-            <ul class="header-list list">
-                <li class="header-item"><a class="header-link link" href="">О нас</a></li>
-                <li class="header-item"><a class="header-link link" href="">Услуги и цены</a></li>
-                <li class="header-item"><a class="header-link link" href="#masters">Мастера</a></li>
-                <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-btn" type="button">онлайн-запись</button>
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="header-logo" href=""><img src="./img/logo.svg" alt="логотип"></a>
+                <ul class="header-list list">
+                    <li class="header-item"><a class="header-link link" href="">О нас</a></li>
+                    <li class="header-item"><a class="header-link link" href="">Услуги и цены</a></li>
+                    <li class="header-item"><a class="header-link link" href="#masters">Мастера</a></li>
+                    <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-connect">
+                <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="header-btn btn" type="button">онлайн-запись</button>
+            </div>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <ul class="hero-list list">
-                <li class="hero-item"><a href="" class="hero-link link">Instagram</a></li>
-                <li class="hero-item"><a href="" class="hero-link link">Youtube</a></li>
-            </ul>
-            <div class="hero-right">
-                <p class="hero-pre-title" lang="en">A hair salon for men in Kyiv</p>
-                <h1 class="hero-title" lang="en">BarberShop</h1>
-                <p class="hero-after-title">Мы эксперты в модных мужских стрижках.
-                    Работаем быстро, осторожно и со вкусом.</p>
+            <div class="container hero-container">
+                <ul class="hero-list list">
+                    <li class="hero-item"><a href="" class="hero-link link">Instagram</a></li>
+                    <li class="hero-item"><a href="" class="hero-link link">Youtube</a></li>
+                </ul>
+                <div class="hero-right">
+                    <p class="hero-pre-title pre-title" lang="en">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-title" lang="en">BarberShop</h1>
+                    <p class="hero-after-title after-title">Мы эксперты в модных мужских стрижках.
+                        Работаем быстро, осторожно и со вкусом.</p>
+                </div>
             </div>
         </section>
         <section class="about">
@@ -53,18 +62,19 @@
                 <p class="about-pre-title">О НАС</p>
                 <h2 class="about-title">Лучший Барбершоп
                     твоего города</h2>
-                <p class="about-after-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+                <p class="about-after-title after-title">Если ты хочешь добавить в свой образ больше уверенности – тебе
+                    точно к нам.
                 </p>
                 <p class="about-text">Мы команда, которая никогда не останавливается на достигнутом
                     и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                     то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
                     Поэтому, мы всегда
                     готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button type="button" class="about-btn">онлайн-запись</button>
+                <button type="button" class="about-btn btn">онлайн-запись</button>
             </div>
         </section>
         <section class="prices">
-            <p class="prices-pre-title">Проведи время в компании лучших мастеров</p>
+            <p class="prices-pre-title pre-title">Проведи время в компании лучших мастеров</p>
             <h2 class="prices-title">Услуги и цены</h2>
             <ul class="prices-list list">
                 <li class="prices-item">
@@ -102,7 +112,7 @@
                     <span class="prices-item-text">от 200 грн.</span>
                 </li>
             </ul>
-            <button type="button" class="prices-btn">онлайн-запись</button>
+            <button type="button" class="prices-btn btn">онлайн-запись</button>
         </section>
         <section class="reasons">
             <ul class="reasons-list list">
@@ -121,14 +131,15 @@
                 </li>
             </ul>
             <div class="reasons-right">
-                <p class="reasons-pre-title">старая традиционная школа</p>
+                <p class="reasons-pre-title pre-title">старая традиционная школа</p>
                 <h2 class="reasons-title">Почему приходят именно к нам?</h2>
-                <p class="reasons-after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
+                <p class="reasons-after-title after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть и
+                    прочувствовать,
                     чем 10 раз прочитать.</p>
             </div>
         </section>
         <section class="masters" id="masters">
-            <p class="masters-pre-title">для настоящих ценителей атмосферы</p>
+            <p class="masters-pre-title pre-title">для настоящих ценителей атмосферы</p>
             <h2 class="masters-title">Наши мастера</h2>
             <ul class="masters-list list">
                 <li class="masters-item">
@@ -149,7 +160,7 @@
             </ul>
         </section>
         <section class="gallery">
-            <p class="gallery-pre-title">На латинском языке “барба” означает “борода”</p>
+            <p class="gallery-pre-title pre-title">На латинском языке “барба” означает “борода”</p>
             <h2 class="visually-hidden">Галерея</h2>
             <ul class="gallery-list list">
                 <li class="gallery-item"><img src="./img/gallery-img-1.jpg" alt="барбер ровняет кончики волос"

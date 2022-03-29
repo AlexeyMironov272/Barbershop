@@ -11,6 +11,32 @@
   --accent-color: #ff6c00;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -36,6 +62,37 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--first-button-color);
+  margin-left: 40px;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  min-width: 160px;
+  height: 40px;
+  background: transparent;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
 /* ----------HEADER---------- */
 
 .header,
@@ -44,6 +101,41 @@ body {
 .online,
 .contacts {
   background-color: #8dc3f5;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.header-item {
+  margin-right: 40px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
@@ -67,17 +159,15 @@ body {
   color: var(--header-text-color);
 }
 
-.header-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--first-button-color);
+/* ----------HERO---------- */
+
+.hero-container {
+  display: flex;
 }
 
-/* ----------HERO---------- */
+.hero-list {
+  width: 93px;
+}
 
 .hero-link {
   font-weight: 600;
@@ -93,12 +183,8 @@ body {
 }
 
 .hero-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--first-text-color);
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -108,23 +194,24 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: 20px;
 }
 
 .hero-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--second-text-color);
+  width: 400px;
+}
+
+.hero-right {
+  flex-grow: 1;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 96px;
 }
 
 /* ----------ABOUT---------- */
 
 .about-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 
@@ -138,9 +225,6 @@ body {
 }
 
 .about-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--fourth-text-color);
 }
 
@@ -151,24 +235,9 @@ body {
   color: var(--fourth-text-color);
 }
 
-.about-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--second-button-color);
-}
-
 /* ----------PRICES---------- */
 
 .prices-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--first-text-color);
 }
 
@@ -186,16 +255,6 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-}
-
-.prices-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--first-button-color);
 }
 
 /* ----------REASONS---------- */
@@ -218,11 +277,6 @@ body {
 }
 
 .reasons-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 
@@ -236,19 +290,12 @@ body {
 }
 
 .reasons-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--fourth-text-color);
 }
 
 /* ----------MASTERS---------- */
 
 .masters-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-align: center;
   color: var(--third-text-color);
 }
 
@@ -281,9 +328,6 @@ body {
 /* ----------GALLERY---------- */
 
 .gallery-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
   text-align: center;
   color: var(--third-text-color);
 }
