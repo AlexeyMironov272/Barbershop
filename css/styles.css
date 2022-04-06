@@ -97,7 +97,6 @@ body {
 content: "";
 width: 63px;
 height: 1px;
-background: rgba(157, 164, 189, 0.6);
 margin-right: 21px;
 
 }
@@ -222,6 +221,10 @@ img {
   margin-bottom: 20px;
 }
 
+.hero-pre-title::before {
+background-color: var(--first-text-color);
+}
+
 .hero-title {
   font-family: "Raleway";
   font-weight: 700;
@@ -263,6 +266,10 @@ img {
 .about-pre-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
+}
+
+.about-pre-title::before {
+  background-color: var(--third-text-color);
 }
 
 .about-title {
@@ -308,6 +315,10 @@ img {
   margin-bottom: 20px;
 }
 
+.prices-pre-title::before {
+  background-color: var(--first-text-color);
+}
+
 .prices-title {
   color: var(--main-title-color);
   margin-bottom: 44px;
@@ -349,6 +360,46 @@ img {
 
 /* ----------REASONS---------- */
 
+.reasons {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.reasons-container {
+  display: flex;
+}
+
+.reasons-left {
+  display: flex;
+  justify-content: center;
+}
+
+.reasons-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+
+.reasons-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.reasons-left,
+.reasons-right {
+  width: calc(50% - 30px);
+}
+
 .reasons-count {
   font-weight: 700;
   font-size: 42px;
@@ -356,6 +407,19 @@ img {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--third-text-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.reasons-count::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--accent-color);
+  
 }
 
 .reasons-item-text {
@@ -368,10 +432,16 @@ img {
 
 .reasons-pre-title {
   color: var(--third-text-color);
+  margin-bottom: 20px;
+}
+
+.reasons-pre-title::before {
+  background-color: var(--third-text-color);
 }
 
 .reasons-title {
   color: var(--third-text-color);
+  margin-bottom: 20px;
 }
 
 .reasons-after-title {
@@ -388,6 +458,10 @@ img {
 .masters-pre-title {
   color: var(--third-text-color);
   margin-bottom: 20px;
+}
+
+.masters-pre-title::before {
+  background-color: var(--third-text-color);
 }
 
 .masters-title {
@@ -440,6 +514,10 @@ img {
 .gallery-pre-title {
   margin-bottom: 44px;
   color: var(--third-text-color);
+}
+
+.gallery-pre-title::before {
+  background-color: var(--third-text-color);
 }
 
 .gallery-list {
